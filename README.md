@@ -47,15 +47,15 @@ PATCH /orders/{id}/cancelled — Отменён
 
 Структура проекта
 src/main/java/ru/pet_project/order_app/
-├── controller/ # REST контроллеры
-├── dto/ # Input/Output DTO
-├── entity/ # JPA сущности
-├── enums/ # OrderStatus
-├── mapper/ # Entity ↔ DTO
-├── repository/ # Spring Data репозитории
-├── security/ # TgAuthFilter, SecurityConfig
-├── service/ # Бизнес-логика
-└── telegram/ # TgBot, команды
+controller/ # REST контроллеры
+dto/ # Input/Output DTO
+entity/ # JPA сущности
+enums/ # OrderStatus
+mapper/ # Entity ↔ DTO
+repository/ # Spring Data репозитории
+security/ # TgAuthFilter, SecurityConfig
+service/ # Бизнес-логика
+telegram/ # TgBot, команды
 
 Команды бота
 /start — регистрация
