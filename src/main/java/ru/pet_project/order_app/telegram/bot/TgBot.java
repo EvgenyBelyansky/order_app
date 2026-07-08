@@ -33,8 +33,11 @@ public class TgBot extends TelegramLongPollingBot {
     private final OrderService orderService;
     private final BotCommandRegistry commandRegistry;
 
-    public TgBot(UserService userService, OrderService orderService, BotCommandRegistry commandRegistry) {
-        super("8996201255:AAGGeOCI_SgI9JdGXWXcINxtkxpKwzWigfQ");  // токен напрямую
+    public TgBot(UserService userService,
+                 OrderService orderService,
+                 BotCommandRegistry commandRegistry,
+                 @Value("${telegram.bot.token}") String token) {
+        super(token);
         this.userService = userService;
         this.orderService = orderService;
         this.commandRegistry = commandRegistry;
